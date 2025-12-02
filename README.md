@@ -36,3 +36,19 @@ Le réseau est reconfigué
 
 Pour verfier le bon focntionnement, on va pinger la carte avec le PC :
 ![ping](ping.png)
+
+## 2.Hello world 
+on a compilé et exécuté un programme "Hello world" sur le SoC :
+![helloworld](helloworld.png)
+
+
+## 3.chenillard
+on peut écrire un programme C qui va ouvrir et écrire dans ces fichiers
+
+
+
+## 4.Device tree 
+Avant de commencer on va aller chercher le ficher dts
+![rechercheDTS](recherche.png)
+
+
