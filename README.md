@@ -38,9 +38,13 @@ Pour verfier le bon focntionnement, on va pinger la carte avec le PC :
 ![ping](ping.png)
 
 ## 2.Hello world 
-on a compilé et exécuté un programme "Hello world" sur le SoC :
-![helloworld](helloworld.png)
 
+- Dans cette partie, nous avons commencé par écrire un programme pour afficher "Hello World".
+- Le fichier `hello.c` a été créé sur la machine hôte, puis transféré dans la VM.
+- On a compilé avec `arm-linux-gnueabihf-gcc`.
+- Une fois exécuté sur la carte, le programme a affiché correctement le message Hello World.
+- Ce test valide la compilation ainsi que la communication entre la VM et le SoC.
+  ![hello world](hello.png)
 
 ## 3.chenillard
 on peut écrire un programme C qui va ouvrir et écrire dans ces fichiers
