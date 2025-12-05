@@ -50,9 +50,36 @@ Pour verfier le bon focntionnement, on va pinger la carte avec le PC :
 on peut écrire un programme C qui va ouvrir et écrire dans ces fichiers
 
 
-
 ## 4.Device tree 
 Avant de commencer on va aller chercher le ficher dts
+
 ![rechercheDTS](recherche.png)
 
+Modification de compatible = "dev,ensea"  dans  le fichier soc_system.dts
+
+![device](device.png)
+
+
+Pour compiler le device tree modifié, nous avons utilisé la commande: 
+
+dtc -O dtb -o soc_system.dtb soc_system.dts.new
+
+
+qui génère le fichier binaire soc_system.dtb destiné à être chargé par le noyau.
+
+###  Accès à la VEEK et installation du nouveau Device Tree
+
+Nous avons monté la partition de boot de la VEEK afin de remplacer le fichier DTB utilisé au démarrage :
+
+mkdir /root/mntboot
+mount /dev/mmcblk0p1 /root/mntboot
+
+Nous avons ensuite renommé l’ancien device tree et copié le nouveau fichier compilé :
+
+mv soc_system.dtb soc_system.dtb.old
+cp soc_system.dtb /root/mntboot/
+
+La carte a été redémarrée pour prendre en compte le nouveau device tree :
+
+reboot
 
