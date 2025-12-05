@@ -48,6 +48,9 @@ Pour verfier le bon focntionnement, on va pinger la carte avec le PC :
 
 ## 3.chenillard
 on peut écrire un programme C qui va ouvrir et écrire dans ces fichiers
+![chennilard](chennilard.png)
+Le programme allume puis éteint les LED une par une en écrivant dans les fichiers de `/sys/class/leds/`, ce qui crée un effet de chenillard.  
+Après compilation et transfert sur la carte SoC, l’exécution confirme que le contrôle des LED fonctionne correctement.
 
 
 ## 4.Device tree 
