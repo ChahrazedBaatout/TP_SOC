@@ -37,6 +37,12 @@ Le réseau est reconfigué
 Pour verfier le bon focntionnement, on va pinger la carte avec le PC :
 ![ping](ping.png)
 
+
+Lancement de la VM et login avec les coordonnées (login: ensea, password: ensea)
+
+![ssh](ssh.png)
+
+
 ## 2.Hello world 
 
 - Dans cette partie, nous avons commencé par écrire un programme pour afficher "Hello World".
